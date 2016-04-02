@@ -1,0 +1,25 @@
+{
+	"name" : "Forced Overdrill",
+	"author" : "Main : zephirot , Modify : Dr_Newbie",
+	"contact" : "",
+	"version" : "2015.11.04",
+	"priority" : 10,
+	"hooks" : [
+		{
+			"hook_id" : "lib/managers/dialogmanager",
+			"script_path" : "lua/ForcedOverdrill.lua"
+    	},
+		{
+			"hook_id" : "lib/network/matchmaking/networkmatchmakingsteam",
+			"script_path" : "lua/checkerr.lua"
+		},
+		{
+			"hook_id" : "lib/managers/hudmanagerpd2",
+			"script_path" : "lua/whengamestart.lua"
+		},
+		{
+			"hook_id" : "lib/managers/menumanagerdialogs",
+			"script_path" : "lua/warning.lua"
+		}
+	]
+}
